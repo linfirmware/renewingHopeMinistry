@@ -1,27 +1,36 @@
-
-<ion-navbar *navbar>
+<ion-navbar primary *navbar>
   <ion-title>Schedule</ion-title>
 </ion-navbar>
 
 <ion-content class="page2">
 	<ion-item-group>
-		<ion-item-divider light>7:45 am</ion-item-divider>
-		<ion-item text-wrap>Door's open coffee, tea, water, pastries; Check-in; Speaker's books will be avilable for sale</ion-item>
-		<ion-item-divider light>8:30 am</ion-item-divider>
-		<ion-item-divider light>9:00 am</ion-item-divider>
-		<ion-item-divider light>9:45 am</ion-item-divider>
-		<ion-item-divider light>10:30 am</ion-item-divider>
-		<ion-item-divider light>11:15 am</ion-item-divider>
-		<ion-item-divider light>11:30 am</ion-item-divider>
-		<ion-item-divider light>1:00 pm (Session 2 Seminar)</ion-item-divider>
-		<ion-item text-wrap>Choice 1</ion-item>
-		<ion-item text-wrap>Choice 2</ion-item>
-		<ion-item text-wrap>How to live in redemption</ion-item>
-		<ion-item text-wrap>Choice 4</ion-item>
-		<ion-item-divider light>2:00 pm</ion-item-divider>
-		<ion-item-divider light>3:00 pm</ion-item-divider>
-		<ion-item-divider light>4:00 pm</ion-item-divider>
-		<ion-item-divider light>5:00 pm</ion-item-divider>
-		<ion-item text-wrap>End Conference &amp; Clean Up</ion-item>
+		<ion-item-divider light>Conference Opening</ion-item-divider>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 0)' >7:45 am - Doors Open / Check In</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 1)' >8:30 am - Worship / Prayer</button>
+		<ion-item-divider light>Session 1</ion-item-divider>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 2)' >9:00 am - Seminar / Speaker (Crystal Renaud)</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 3)' >9:45 am - Seminar / Speaker (Jennifer Allison)</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 4)' >10:30 am - Seminar / Speaker (Sarah Bragg)</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 5)' >11:15 am - Session 1 Closing</button>
+		<ion-item-divider light>Lunch</ion-item-divider>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 6)' >11:30 am - Lunch Break (Food Trucks)</button>
+		<ion-item-divider light>Session 2, Seminar 1</ion-item-divider>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 7)' >1:00 pm - Choice 1</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 8)' >1:00 pm - Choice 2</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 9)' >1:00 pm - How to live in redemption</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 10)' >1:00 pm - Choice 4</button>
+		<ion-item-divider light>Session 2, Seminar 2</ion-item-divider>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 7)' >1:00 pm - Choice 1</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 8)' >1:00 pm - Choice 2</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 9)' >1:00 pm - How to live in redemption</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 10)' >1:00 pm - Choice 4</button>
+		<ion-item-divider light>Session 2, Seminar 3</ion-item-divider>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 7)' >1:00 pm - Choice 1</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 8)' >1:00 pm - Choice 2</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 9)' >1:00 pm - How to live in redemption</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 10)' >1:00 pm - Choice 4</button>
+		<ion-item-divider light>Conference Closing</ion-item-divider>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 11)' >4:00 pm - Session 2 Closing</button>
+		<button ion-item text-wrap (click)='viewScheduleDetails(this, 12)' >5:00 pm - Conference Ends / Clean Up</button>
 	</ion-item-group>
 </ion-content>

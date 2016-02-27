@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-               BuildableName = "V2 Test.app"
-               BlueprintName = "V2 Test"
-               ReferencedContainer = "container:V2 Test.xcodeproj">
+               BuildableName = "RenewingHope.app"
+               BlueprintName = "RenewingHope"
+               ReferencedContainer = "container:RenewingHope.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "V2 Test.app"
-            BlueprintName = "V2 Test"
-            ReferencedContainer = "container:V2 Test.xcodeproj">
+            BuildableName = "RenewingHope.app"
+            BlueprintName = "RenewingHope"
+            ReferencedContainer = "container:RenewingHope.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "V2 Test.app"
-            BlueprintName = "V2 Test"
-            ReferencedContainer = "container:V2 Test.xcodeproj">
+            BuildableName = "RenewingHope.app"
+            BlueprintName = "RenewingHope"
+            ReferencedContainer = "container:RenewingHope.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "V2 Test.app"
-            BlueprintName = "V2 Test"
-            ReferencedContainer = "container:V2 Test.xcodeproj">
+            BuildableName = "RenewingHope.app"
+            BlueprintName = "RenewingHope"
+            ReferencedContainer = "container:RenewingHope.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
