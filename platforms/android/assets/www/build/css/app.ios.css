@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! Ionic: iOS */
 /*! normalize.css v3.0.2 | MIT License | github.com/necolas/normalize.css */
 audio,
@@ -7512,3 +7513,15 @@ body {
   font-family: -apple-system, "Helvetica Neue", "Roboto", sans-serif;
   font-size: 1.4rem;
   background-color: #fff; }
+
+#banner {
+  width: 100%;
+  height: 40%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: black; }
+
+​
+#banner img {
+  width: 100%; }

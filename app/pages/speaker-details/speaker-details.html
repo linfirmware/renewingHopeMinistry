@@ -5,9 +5,10 @@
   Ionic pages and navigation.
 -->
 <ion-navbar *navbar>
-  <ion-title>Speaker Details</ion-title>
+  <ion-title>{{item.name}}</ion-title>
 </ion-navbar>
 
 <ion-content padding class="speaker-details">
-  <p>Test</p>
+	<img src="images/{{item.banner}}" class="banner" />
+  <p>{{item.biography}}</p>
 </ion-content>

@@ -26,6 +26,8 @@ export class MyApp {
       // For example, we might change the StatusBar color. This one below is
       // good for dark backgrounds and light text:
       // StatusBar.setStyle(StatusBar.LIGHT_CONTENT)
+
+      StatusBar.styleDefault();
     });
   }
 }

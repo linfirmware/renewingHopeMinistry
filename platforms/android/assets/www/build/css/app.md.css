@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! Ionic: Material Design */
 /*! normalize.css v3.0.2 | MIT License | github.com/necolas/normalize.css */
 audio,
@@ -9177,3 +9178,15 @@ body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
   background-color: #fff; }
+
+#banner {
+  width: 100%;
+  height: 40%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: black; }
+
+​
+#banner img {
+  width: 100%; }
