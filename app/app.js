@@ -27,7 +27,7 @@ export class MyApp {
       // good for dark backgrounds and light text:
       // StatusBar.setStyle(StatusBar.LIGHT_CONTENT)
 
-      StatusBar.styleDefault();
+      //StatusBar.styleDefault();
     });
   }
 }

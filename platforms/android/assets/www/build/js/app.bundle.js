@@ -3216,7 +3216,7 @@
 	            // For example, we might change the StatusBar color. This one below is
 	            // good for dark backgrounds and light text:
 	            // StatusBar.setStyle(StatusBar.LIGHT_CONTENT)
-	            StatusBar.styleDefault();
+	            //StatusBar.styleDefault();
 	        });
 	    }
 	    MyApp = __decorate([
@@ -62222,7 +62222,8 @@
 	var ionic_1 = __webpack_require__(5);
 	var page1_1 = __webpack_require__(361);
 	var page2_1 = __webpack_require__(362);
-	var page3_1 = __webpack_require__(363);
+	var page3_1 = __webpack_require__(364);
+	var resources_1 = __webpack_require__(366);
 	var TabsPage = (function () {
 	    function TabsPage() {
 	        // this tells the tabs component which Pages
@@ -62230,6 +62231,7 @@
 	        this.tab1Root = page1_1.Page1;
 	        this.tab2Root = page2_1.Page2;
 	        this.tab3Root = page3_1.Page3;
+	        this.resourcesRoot = resources_1.ResourcesPage;
 	    }
 	    TabsPage = __decorate([
 	        ionic_1.Page({
@@ -62284,14 +62286,61 @@
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var ionic_1 = __webpack_require__(5);
+	var schedule_details_1 = __webpack_require__(363);
 	var Page2 = (function () {
-	    function Page2() {
+	    function Page2(nav) {
+	        this.nav = nav;
+	        this.details = [{
+	                'name': 'Doors Open / Check In',
+	                'desc': 'Doors open for check in at 7:45 am. Coffee, tea, water, and pastries will be available. Speaker\'s books will be available to sell only.'
+	            }, {
+	                'name': 'Worship / Prayer',
+	                'desc': 'We will have a worship and prayer session as well as reviewing the schedule, reminding everyone about lunch, and introducing our speakers to the stage. We will have door prizes. In addition we will talk about our all day prayer room.'
+	            }, {
+	                'name': 'Seminar / Speaker (Crystal Renaud)',
+	                'desc': 'Fill in and collect index cards; New redeemer skit with Shannon; Bathroom break'
+	            }, {
+	                'name': 'Seminar / Speaker (Jennifer Allison)',
+	                'desc': 'Fill in and collect index cards; Line dance and door prize with Tammi'
+	            }, {
+	                'name': 'Seminar / Speaker (Sarah Bragg)',
+	                'desc': 'Fill in and collect index cards; Cardboard testimonies with Shannon'
+	            }, {
+	                'name': 'Session 1 Closing Meeting',
+	                'desc': 'Thank our speakers and hand out another door prize. Details about session 2 will be shared and we will close session 1 in prayer with Kelly Johns. Stephen ministers will be available to talk to girls and moms. Counseling centers and vendors will be setup in the cafeteria and hallways.'
+	            }, {
+	                'name': 'Lunch Break (Food Trucks)',
+	                'desc': 'Food trucks are available outside, and we encourage you to eat in the underground area downstairs; there will be signs directing you or you can ask any of the greeters for directions or help.'
+	            }, {
+	                'name': 'Choice 1',
+	                'desc': 'Details to come. Mom\'s Room: TBA, Girl\'s Room: TBA.'
+	            }, {
+	                'name': 'Choice 2',
+	                'desc': 'Details to come. Mom\'s Room: TBA, Girl\'s Room: TBA.'
+	            }, {
+	                'name': 'How to live in redemption',
+	                'desc': 'Details about How to live in redemption to come. Mom\'s Room: TBA, Girl\'s Room: TBA.'
+	            }, {
+	                'name': 'Choice 4',
+	                'desc': 'Details to come. Mom\'s Room: TBA, Girl\'s Room: TBA.'
+	            }, {
+	                'name': 'Session 2 Closing Meeting',
+	                'desc': 'Preview of what\'s next at Fellowship (bible study); Counseling centers and vendors as well as Stephen ministers will be availble until 5pm. Door prizes will be given away and we will have further worship as well. Shannon will host a skit bag monologue. Kelly Johns will lead everyone in prayer about gospel and redemption; Girl\'s and mom\'s will write their baggage on a post it and stick it to the cross followed by a silent exit.'
+	            }, {
+	                'name': 'Conference Ends / Clean Up',
+	                'desc': 'At this point the conference is over, please help in cleaning up before leaving if you are available to do so. Thank you all for coming!'
+	            }];
 	    }
+	    Page2.prototype.viewScheduleDetails = function (event, item) {
+	        this.nav.push(schedule_details_1.ScheduleDetailsPage, {
+	            item: this.details[item]
+	        });
+	    };
 	    Page2 = __decorate([
 	        ionic_1.Page({
 	            templateUrl: 'build/pages/page2/page2.html'
 	        }), 
-	        __metadata('design:paramtypes', [])
+	        __metadata('design:paramtypes', [ionic_1.NavController])
 	    ], Page2);
 	    return Page2;
 	})();
@@ -62312,7 +62361,44 @@
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var ionic_1 = __webpack_require__(5);
-	var speaker_details_1 = __webpack_require__(364);
+	/*
+	  Generated class for the ScheduleDetailsPage page.
+
+	  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+	  Ionic pages and navigation.
+	*/
+	var ScheduleDetailsPage = (function () {
+	    function ScheduleDetailsPage(nav, navParams) {
+	        this.nav = nav;
+	        this.navParams = navParams;
+	        this.item = this.navParams.get("item");
+	    }
+	    ScheduleDetailsPage = __decorate([
+	        ionic_1.Page({
+	            templateUrl: 'build/pages/schedule-details/schedule-details.html',
+	        }), 
+	        __metadata('design:paramtypes', [ionic_1.NavController, ionic_1.NavParams])
+	    ], ScheduleDetailsPage);
+	    return ScheduleDetailsPage;
+	})();
+	exports.ScheduleDetailsPage = ScheduleDetailsPage;
+
+
+/***/ },
+/* 364 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var ionic_1 = __webpack_require__(5);
+	var speaker_details_1 = __webpack_require__(365);
 	var Page3 = (function () {
 	    function Page3(nav) {
 	        this.nav = nav;
@@ -62350,7 +62436,7 @@
 
 
 /***/ },
-/* 364 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -62384,6 +62470,41 @@
 	    return SpeakerDetailsPage;
 	})();
 	exports.SpeakerDetailsPage = SpeakerDetailsPage;
+
+
+/***/ },
+/* 366 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var ionic_1 = __webpack_require__(5);
+	/*
+	  Generated class for the ResourcesPage page.
+
+	  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+	  Ionic pages and navigation.
+	*/
+	var ResourcesPage = (function () {
+	    function ResourcesPage(nav) {
+	        this.nav = nav;
+	    }
+	    ResourcesPage = __decorate([
+	        ionic_1.Page({
+	            templateUrl: 'build/pages/resources/resources.html',
+	        }), 
+	        __metadata('design:paramtypes', [ionic_1.NavController])
+	    ], ResourcesPage);
+	    return ResourcesPage;
+	})();
+	exports.ResourcesPage = ResourcesPage;
 
 
 /***/ }
