@@ -17,7 +17,7 @@
        under the License.
  */
 
-package io.ionic.starter;
+package com.linfirmware.renewingHope;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

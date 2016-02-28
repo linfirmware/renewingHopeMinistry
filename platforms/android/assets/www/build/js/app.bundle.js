@@ -62493,14 +62493,20 @@
 	  Ionic pages and navigation.
 	*/
 	var ResourcesPage = (function () {
-	    function ResourcesPage(nav) {
+	    function ResourcesPage(nav, platform) {
+	        this.platform = platform;
 	        this.nav = nav;
 	    }
+	    ResourcesPage.prototype.launch = function (url) {
+	        this.platform.ready().then(function () {
+	            cordova.InAppBrowser.open(url, "_system", "location=true");
+	        });
+	    };
 	    ResourcesPage = __decorate([
 	        ionic_1.Page({
 	            templateUrl: 'build/pages/resources/resources.html',
 	        }), 
-	        __metadata('design:paramtypes', [ionic_1.NavController])
+	        __metadata('design:paramtypes', [ionic_1.NavController, ionic_1.Platform])
 	    ], ResourcesPage);
 	    return ResourcesPage;
 	})();

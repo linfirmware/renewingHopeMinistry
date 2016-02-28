@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		0450DDD428854C91890DFEA0 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 96390DD48D6C4D2A9EE1FDDB /* CDVStatusBar.m */; };
@@ -23,6 +22,7 @@
 		C1DC9A17D78A4304B8101849 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 265FBB3E4DED4F4394E6BBD5 /* CDVLogger.m */; };
 		C5EA70DA0CCD4CDBB643991B /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B78C1E8B12445BCAD95964A /* CDVViewController+SplashScreen.m */; };
 		F2AA82B60F4E4A73A0A48041 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D8B9145B0E419584AB2975 /* CDVDevice.m */; };
+		AECD1537A59A4A0BADD1A081 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E713FA48E57B40ED878779BE /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		0B78C1E8B12445BCAD95964A /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* RenewingHope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenewingHope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Renewing Hope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Renewing Hope.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		265FBB3E4DED4F4394E6BBD5 /* CDVLogger.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLogger.m; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E9DEBB9C1244E09A7EDA3BF /* UIWebViewExtension.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = UIWebViewExtension.m; path = "ionic-plugin-keyboard/UIWebViewExtension.m"; sourceTree = "<group>"; };
@@ -76,6 +76,8 @@
 		F0710A2663814E06928D11CA /* CDVLogger.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; };
 		F631B3B864CD47DBAC97570B /* CDVSplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = RenewingHope/config.xml; sourceTree = "<group>"; };
+		E713FA48E57B40ED878779BE /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		30CC3CBDE18040F394C0DCB2 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +108,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* RenewingHope.app */,
+				1D6058910D05DD3D006BFB54 /* Renewing Hope.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +194,8 @@
 				2E9DEBB9C1244E09A7EDA3BF /* UIWebViewExtension.m */,
 				7FE7CB8E963243DCB15F992F /* IonicKeyboard.h */,
 				78D6FED5DC7B4FB39CC88686 /* UIWebViewExtension.h */,
+				E713FA48E57B40ED878779BE /* CDVInAppBrowser.m */,
+				30CC3CBDE18040F394C0DCB2 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = RenewingHope/Plugins;
@@ -225,7 +229,7 @@
 			);
 			name = RenewingHope;
 			productName = RenewingHope;
-			productReference = 1D6058910D05DD3D006BFB54 /* RenewingHope.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Renewing Hope.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -321,6 +325,7 @@
 				0450DDD428854C91890DFEA0 /* CDVStatusBar.m in Sources */,
 				B0FEDD6C4939401A8061296B /* IonicKeyboard.m in Sources */,
 				4CD5CFDE9FDC45DF86BDD2A5 /* UIWebViewExtension.m in Sources */,
+				AECD1537A59A4A0BADD1A081 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +360,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "RenewingHope/RenewingHope-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_NAME = RenewingHope;
+				PRODUCT_NAME = "Renewing Hope";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -377,7 +382,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "RenewingHope/RenewingHope-Info.plist";
-				PRODUCT_NAME = RenewingHope;
+				PRODUCT_NAME = "Renewing Hope";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
